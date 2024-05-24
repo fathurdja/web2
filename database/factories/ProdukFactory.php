@@ -12,12 +12,14 @@ class ProdukFactory extends Factory
     /**
      * Define the model's default state.
      *
-     * @return array<string, mixed>
+     *@return array<string, mixed>
      */
     public function definition(): array
     {
         return [
-            //
+            'nama'=>fake()->name(),
+            'price'=>fake()->randomFloat('2',0,2),
+            'category'=>fake()->randomElements('makanan','barang',2,false),
         ];
     }
 }

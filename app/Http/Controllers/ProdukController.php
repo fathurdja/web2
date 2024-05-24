@@ -13,7 +13,8 @@ class ProdukController extends Controller
      */
     public function index()
     {
-        //
+        $data=produk::all();
+        return view('produk',['data'=>$data]);
     }
 
     /**

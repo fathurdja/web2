@@ -2,7 +2,11 @@
 
 
 @section('container')
-<h1 style="color:chocolate ">{{ $judul }}</h1>
-<p>{{ $nomor }}</p>    
+<ol>
+    <p>Data Produk</p>
+    @foreach ($data as $item)
+        <li> <span> {{ $item->id }}</span> {{$item->name}} <span>{{ $item->price }}</span></li>
+    @endforeach
+</ol>
 @endsection
 
