@@ -21,5 +21,10 @@ class DatabaseSeeder extends Seeder
         //     'price' => 20000,
         //     'category'=>'makanan'
         // ]);
-    }
+    
+        $this->call([
+            Bookseeder::class,
+        ]);
+    } 
+    
 }

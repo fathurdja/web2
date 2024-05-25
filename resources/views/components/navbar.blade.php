@@ -6,20 +6,21 @@
   <body class="h-full">
   ```
 -->
-<div class="min-h-full">
-  <nav class="bg-[#35374B]">
+<div class="min-h-96 mb-20">
+  <nav class="bg-[#FFA62F]">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="flex h-16 items-center justify-between">
+      <div class="flex h-20 items-center justify-between">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+            <img class="h-8 w-8" src="assets/img/logo.png" alt="Your Company">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/home" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-              <a href="/kontak" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">kontak</a>
-              <a href="/profile" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Profile</a>
+              <a href="/home" class="text-gray-100 hover:bg-[#FFC96F] hover:text-white rounded-md px-3 py-2 text-xl font-medium" aria-current="page">Home</a>
+              {{-- <a href="/kontak" class="text-gray-100 hover:bg-[#FFC96F] hover:text-white rounded-md px-3 py-2 text-xl font-medium">kontak</a>
+              <a href="/produk" class="text-gray-100 hover:bg-[#FFC96F] hover:text-white rounded-md px-3 py-2 text-xl font-medium">Produk</a> --}}
+              <a href="/course" class="text-gray-100 hover:bg-[#FFC96F] hover:text-white rounded-md px-3 py-2 text-xl font-medium">Courses</a>
               {{-- <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
               <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Reports</a> --}}
             </div>
@@ -27,7 +28,7 @@
         </div>
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
-            <button   type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <button   type="button" class="relative rounded-full bg-[#FFA62F] p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">View notifications</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -125,10 +126,4 @@
       </div>
     </div>
   </nav>
-
-  {{-- <header class="bg-white shadow">
-    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
-    </div>
-  </header> --}}
 </div>
