@@ -15,5 +15,19 @@ class CourseSeeder extends Seeder
     public function run(): void
     {
         courses::factory()->count(10)->create();
+        Courses::factory()->create([
+            'name' => 'Fathur',
+
+            'description' => 'kelas yang sangat sulit',
+            'credits' => 2,
+            'instructure' => 'mr fahri'
+        ]);
+        Courses::factory()->create([
+            'name' => 'Fathur rizqi',
+
+            'description' => 'kelas yang sangat sulitt bangetett',
+            'credits' => 3,
+            'instructure' => 'mr fahri yaman'
+        ]);
     }
 }

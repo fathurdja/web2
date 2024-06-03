@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Produk;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
@@ -15,18 +16,23 @@ class ProdukSeeder extends Seeder
      */
     public function run()
     {
-        $faker = Faker::create();
+        Produk::factory()->create([
+            'name' => 'Pempek',
+            'description' => 'ini adalah makananan khas palembang ',
+            'price' => 20000,
 
-        $categories = ['makanan','barang'];
+        ]);
+        Produk::factory()->create([
+            'name' => 'Coto Makassar',
+            'description' => 'ini adalah makananan khas Makassar ',
+            'price' => 15000,
 
-        foreach (range(1, 10) as $index) {
-            DB::table('products')->insert([
-                'name' => $faker->word,
-                'price' => $faker->numberBetween(10000, 100000),
-                'category' => $faker->randomElement($categories),
-                'created_at' => now(),
-                'updated_at' => now(),
-            ]);
-        }
+        ]);
+        Produk::factory()->create([
+            'name' => 'Kerak Telur',
+            'description' => 'ini adalah makananan khas Jakarta ',
+            'price' => 10000,
+
+        ]);
     }
 }

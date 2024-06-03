@@ -22,9 +22,9 @@ class DatabaseSeeder extends Seeder
         //     'category'=>'makanan'
         // ]);
     
-        $this->call([
-            Bookseeder::class,
-        ]);
+        // $this->call([
+        //     Bookseeder::class,
+        // ]);
     } 
     
 }

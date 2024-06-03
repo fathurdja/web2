@@ -21,7 +21,3 @@
             </tr>
         @endforeach
     </tbody>
-</table> --}}
-@foreach ($data as $item)
-    <li>{{$item->title}}</li>
-@endforeach

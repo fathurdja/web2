@@ -17,9 +17,9 @@ class ProdukFactory extends Factory
     public function definition(): array
     {
         return [
-            'nama'=>fake()->name(),
-            'price'=>fake()->randomFloat('2',0,2),
-            'category'=>fake()->randomElements('makanan','barang',2,false),
+            'name' => fake()->name(),
+            'description' => fake()->paragraph(),
+            'price' => fake()->randomFloat('2', 0, 2),
         ];
     }
 }

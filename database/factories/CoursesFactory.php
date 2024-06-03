@@ -13,10 +13,10 @@ class CoursesFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->sentence(3),
-            'description' => $this->faker->paragraph,
-            'credits' => $this->faker->randomFloat(2, 1000, 1000000),  // price in Rupiah
-            'instructure' => $this->faker->name,
+            'name' => fake()->name,
+            'description' => fake()->paragraph,
+            'credits' => fake()->randomElement([2,3]),  
+            'instructure' => fake()->name(),
         ];
     }
 }

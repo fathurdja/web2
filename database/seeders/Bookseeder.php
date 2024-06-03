@@ -14,5 +14,10 @@ class Bookseeder extends Seeder
     public function run(): void
     {
        Book::factory()->count(10)->create();
+    //    Produk::factory()->create([
+    //         'name' => 'Pempek',
+    //         'price' => 20000,
+    //         'category'=>'makanan'
+    //     ]);
     }
 }
